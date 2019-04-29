@@ -1,0 +1,14 @@
+1) There are three maven profiles in the project
+	a) RedbusBuses ---> To run Tests related to Bus functionality
+	b) RedbusHotels ---> To run Tests related to Hotels functionality
+	c) RedbusAllTest ---> To run Tests related to both Bus and Hotels functionality
+	
+	Commands to run above mentioned profiles:-
+	a) mvn -PRedbusBuses verify -e -fae -DURL=https://www.redbus.in        OR     mvn -PRedbusBuses verify -e -fae
+	b) mvn -PRedbusHotels verify -e -fae -DURL=https://www.redbus.in       OR     mvn -PRedbusHotels verify -e -fae
+	c) mvn -PRedbusAllTest verify -e -fae -DURL=https://www.redbus.in      OR     mvn -PRedbusAllTest verify -e -fae
+	
+	
+2) It can be run by executing testng.xml to run Tests in parallel	
+	
+	
